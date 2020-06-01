@@ -16,7 +16,7 @@ class AppWidget extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           navigatorKey: Modular.navigatorKey,
           title: 'Flutter Slidy',
-          theme: Modular.get<AppController>().darkStatus ? AppThemeDark().getTheme() : AppThemeLight().getTheme(),
+          theme: Modular.get<AppController>().getDarkStatus ? AppThemeDark().getTheme() : AppThemeLight().getTheme(),
           darkTheme: ThemeData.dark(),
           //themeMode: Modular.get<AppController>().darkStatus ? ThemeMode.dark : ThemeMode.light,
           initialRoute: '/',

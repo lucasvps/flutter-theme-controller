@@ -19,13 +19,14 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
     return Scaffold(
         appBar: AppBar(
           title: Text('Theme Changer'),
+         
           actions: <Widget>[
             Center(
-                child: Text(Modular.get<AppController>().darkStatus
+                child: Text(Modular.get<AppController>().getDarkStatus
                     ? 'Change to Light Theme'
                     : 'Change to Dark Theme')),
             Switch(
-                value: Modular.get<AppController>().darkStatus,
+                value: Modular.get<AppController>().getDarkStatus,
                 onChanged: (_) {
                   Modular.get<AppController>().changeDarkStatus();
                 }),

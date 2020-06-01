@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/material/theme_data.dart';
 import 'package:themes/app/interfaces/theme_app_interface.dart';
 
 class AppThemeDark extends IThemeAppInterface{
